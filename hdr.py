@@ -40,12 +40,6 @@ def saturation(img):
 makeHDR = 1
 
 if makeHDR == 1:
-    #parser = argparse.ArgumentParser(description='Code for High Dynamic Range Imaging tutorial.')
-    #parser.add_argument('--input', type=str, help='Path to the directory that contains images and exposure times.')
-    #args = parser.parse_args()
-    #if not args.input:
-    #    parser.print_help()
-    #    exit(0)
     args = input("Name of dir with SDR images: ")
     images, times = loadExposureSeq(args)
     alignMTB = cv.createAlignMTB(6, 4, True)
